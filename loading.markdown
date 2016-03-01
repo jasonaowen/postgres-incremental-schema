@@ -9,7 +9,7 @@ https://github.com/jasonaowen/document-to-postgres
 
 ```sql
 CREATE TABLE raw_events (
-  id SERIAL PRIMARY KEY,
+  event_id SERIAL PRIMARY KEY,
   event JSONB NOT NULL
 )
 ```
@@ -76,12 +76,12 @@ Note: will someone write this down?
 
 ```sql
 CREATE TABLE events (
-  id INTEGER PRIMARY KEY
-    REFERENCES raw_events(id),
+  event_id INTEGER PRIMARY KEY
+    REFERENCES raw_events(event_id),
   event JSONB NOT NULL
 );
 
-INSERT INTO events (id, event)
-SELECT id, event
+INSERT INTO events (event_id, event)
+SELECT event_id, event
 FROM raw_events;
 ```

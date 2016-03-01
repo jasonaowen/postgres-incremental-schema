@@ -24,11 +24,11 @@ GROUP BY type, jsonb_object_keys(event)
 CREATE TABLE pushes (
   id SERIAL PRIMARY KEY,
   event_id INTEGER NOT NULL
-    REFERENCES events(id),
+    REFERENCES events(event_id),
   payload JSONB NOT NULL);
 
 INSERT INTO pushes (event_id, payload)
-SELECT id, payload FROM events WHERE type = 'PushEvent';
+SELECT event_id, payload FROM events WHERE type = 'PushEvent';
 ```
 
 Note that the foreign key points the other way!

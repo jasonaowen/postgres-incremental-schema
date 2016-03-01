@@ -9,7 +9,7 @@ Now that we know what's in those objects, let's get them into columns.
 ALTER TABLE events
 ADD COLUMN actor JSONB,
 ADD COLUMN created_at JSONB,
-ADD COLUMN github_id JSONB,
+ADD COLUMN id JSONB,
 ADD COLUMN org JSONB,
 ADD COLUMN payload JSONB,
 ADD COLUMN public JSONB,
@@ -22,7 +22,7 @@ ADD COLUMN type JSONB;
 UPDATE events
 SET actor = event->'actor',
     created_at = event->'created_at',
-    github_id = event->'github_id',
+    id = event->'id',
     org = event->'org',
     payload = event->'payload',
     public = event->'public',
