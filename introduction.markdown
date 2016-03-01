@@ -20,4 +20,3 @@ https://github.com/jasonaowen/pdxpug-incremental-schema
 - Correcting data types
 - Incremental normalization
 - Dealing with JSON arrays
-- Comparing Google Big Query
