@@ -1,8 +1,4 @@
-## Incremental Schema Discovery
-
-or
-
-### JSON Wrangling
+## The JSON-Driven Schema
 
 by
 
