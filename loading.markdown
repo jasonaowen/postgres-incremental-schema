@@ -42,17 +42,17 @@ zcat 2016-03-02-19.json.gz | grep '\\u0000' | wc -l
 
 The double backslash matters.
 
-Note: other approaches are valid, here; you could halt the import, or
-substitute a placeholder using sed.
-
 
 ## Loading
 
 ```
 zcat 2016-03-02-19.json.gz |
-  grep -v '\\u0000' |
+  sed -e 's/\\u0000//' |
   python json-to-postgres.py owenja demo raw_events event
 ```
+
+Note: other approaches are valid, here; you could halt the import, or
+filter out lines with grep to parse or inspect separately.
 
 
 ## Size comparison
