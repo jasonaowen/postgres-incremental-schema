@@ -1,29 +1,3 @@
-## What's in a JSON?
-
-Scalars:
-- Boolean
-- Number
-- String
-- null
-
-Containers:
-- Array
-- Object
-
-
-## What's in an object?
-
-```json
-{
-  "created_at": "2011-09-06T17:26:27Z",
-  "id": 12345
-}
-```
-
-Note: keys and values. Keys are always strings; values can be any JSON type.
-Keys may _not_ be unique!
-
-
 ## What's in our database?
 
 ```sql

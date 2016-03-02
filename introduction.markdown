@@ -10,9 +10,10 @@ https://github.com/jasonaowen/postgres-incremental-schema
 
 ## Query Plan
 
+- JSON & Postgres
 - Dataset introduction
 - Loading data into Postgres
-- Poking at JSON objects
+- Poking at our data
 - Correcting data types
 - Incremental normalization
 - Dealing with JSON arrays
