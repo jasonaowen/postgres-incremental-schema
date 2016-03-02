@@ -14,5 +14,5 @@ https://www.githubarchive.org/
 
 Gzipped, Line-Delimited JSON
 
-February 18th, 5pm Pacific time:
-http://data.githubarchive.org/2016-02-19-01.json.gz
+March 2nd, 11am Pacific time:
+http://data.githubarchive.org/2016-03-02-19.json.gz
