@@ -70,8 +70,6 @@ ORDER BY pg_total_relation_size(C.oid) DESC;
 
 https://wiki.postgresql.org/wiki/Disk_Usage
 
-Note: will someone write this down?
-
 
 ## Keep a copy for comparison
 

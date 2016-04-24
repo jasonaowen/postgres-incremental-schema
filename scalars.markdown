@@ -78,8 +78,8 @@ CREATE FUNCTION set_concrete_type(
 ## Last scalar
 
 ```sql
-SELECT * FROM type_count('events', 'github_id');
-SELECT github_id FROM events LIMIT 5;
+SELECT * FROM type_count('events', 'id');
+SELECT id FROM events LIMIT 5;
 
-SELECT set_concrete_type('events', 'github_id', 'BIGINT');
+SELECT set_concrete_type('events', 'id', 'BIGINT');
 ```
