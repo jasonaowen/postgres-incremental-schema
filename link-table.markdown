@@ -1,23 +1,3 @@
-## Polymorphism
-
-The `payload` type is a little different.
-
-```sql
-SELECT * FROM key_count('events', 'payload');
-```
-
-
-## Varies with type
-
-```sql
-SELECT type,
-       jsonb_object_keys(event),
-       COUNT(*)
-FROM events
-GROUP BY type, jsonb_object_keys(event)
-```
-
-
 ## Let's do PushEvent
 
 ```sql
@@ -30,8 +10,6 @@ CREATE TABLE pushes (
 INSERT INTO pushes (event_id, payload)
 SELECT event_id, payload FROM events WHERE type = 'PushEvent';
 ```
-
-Note that the foreign key points the other way!
 
 
 ## Most of these are mechanical
