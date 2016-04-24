@@ -99,9 +99,7 @@ lower score reported.
 ```sql
 SELECT * FROM demo;
 SELECT data->'bar' FROM demo WHERE id = 1;
-SELECT id, jsonb_each(data) FROM demo WHERE id = 1;
 SELECT data->1 FROM demo WHERE id = 2;
-SELECT id, jsonb_array_elements(data) FROM demo WHERE id = 2;
 ```
 
 http://www.postgresql.org/docs/current/static/functions-json.html
@@ -110,3 +108,13 @@ Note: `CREATE TABLE demo (id SERIAL PRIMARY KEY, data JSONB);`
 `INSERT INTO demo (data) VALUES ('{"bar": "baz", "balance": 7.77, "active": false}'::json);`
 `INSERT INTO demo (data) VALUES ('["first", "second", 3, true]'::json);`
 
+
+## [Set returning functions](http://www.postgresql.org/docs/current/static/functions-srf.html)
+
+```sql
+SELECT generate_series(1, 5);
+SELECT 'a', generate_series(1, 5);
+
+SELECT id, jsonb_each(data) FROM demo WHERE id = 1;
+SELECT id, jsonb_array_elements(data) FROM demo WHERE id = 2;
+```
