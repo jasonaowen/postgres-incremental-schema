@@ -4,7 +4,7 @@
 SELECT jsonb_typeof(event),
        COUNT(*)
 FROM events
-GROUP BY jsonb_typeof(event);
+GROUP BY 1;
 ```
 
 
@@ -19,7 +19,7 @@ CREATE FUNCTION type_count(in table_name text, in column_name text)
         'SELECT jsonb_typeof("%s"),
                 COUNT(*)
          FROM "%s"
-         GROUP BY jsonb_typeof("%s")',
+         GROUP BY 1',
       column_name, table_name, column_name);
     END
   $func$ LANGUAGE plpgsql STABLE;
@@ -34,7 +34,7 @@ select * from type_count('events', 'event');
 SELECT jsonb_object_keys(event),
        COUNT(*)
 FROM events
-GROUP BY jsonb_object_keys(event);
+GROUP BY 1;
 ```
 
 
@@ -49,7 +49,7 @@ CREATE FUNCTION key_count(in table_name text, in column_name text)
         'SELECT jsonb_object_keys("%s"),
                 COUNT(*)
          FROM "%s"
-         GROUP BY jsonb_object_keys("%s")',
+         GROUP BY 1',
       column_name, table_name, column_name);
     END
   $func$ LANGUAGE plpgsql STABLE;

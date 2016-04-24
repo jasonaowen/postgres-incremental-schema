@@ -89,10 +89,9 @@ sets `2016-01-01-1.json.gz`, `2016-01-15-15.json.gz`, and
 tl;dr: use JSONB.
 
 Note: queries will be introduced later, but were `SELECT
-JSON_OBJECT_KEYS(data), COUNT(*) FROM interpreted GROUP BY
-JSON_OBJECT_KEYS(data)` and `SELECT JSONB_OBJECT_KEYS(data), COUNT(*) FROM
-compiled GROUP BY JSONB_OBJECT_KEYS(data)`, run twice, and the lower score
-reported.
+JSON_OBJECT_KEYS(data), COUNT(*) FROM interpreted GROUP BY 1` and `SELECT
+JSONB_OBJECT_KEYS(data), COUNT(*) FROM compiled GROUP BY 1`, run twice, and the
+lower score reported.
 
 
 ## How to work with it
