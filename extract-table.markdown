@@ -83,7 +83,9 @@ SELECT DISTINCT gravatar_id FROM actors;
 ALTER TABLE actors DROP COLUMN gravatar_id;
 ```
 
-If it's always empty, do we still need it?
+If it's [always
+empty](https://developer.github.com/changes/2014-09-05-removing-gravatar-id/),
+do we still need it?
 
 
 ## Finish up with actors
