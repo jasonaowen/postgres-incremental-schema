@@ -42,7 +42,7 @@ SELECT type FROM events LIMIT 5;
 ALTER TABLE events
 ALTER COLUMN type
   TYPE TEXT
-  USING type::TEXT::TEXT;
+  USING type::TEXT;
 ```
 
 
