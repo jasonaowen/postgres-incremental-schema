@@ -1,6 +1,7 @@
 ## Dataset Introduction
 
 https://developer.github.com/v3/
+https://developer.github.com/v3/activity/events/types/
 
 
 ## GitHub Archive
@@ -14,5 +15,5 @@ https://www.githubarchive.org/
 
 Gzipped, Line-Delimited JSON
 
-March 2nd, 11am Pacific time:
-http://data.githubarchive.org/2016-03-02-19.json.gz
+April 24th, 8am Pacific time:
+http://data.githubarchive.org/2016-04-24-15.json.gz

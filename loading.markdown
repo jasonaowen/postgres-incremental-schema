@@ -37,7 +37,7 @@ http://www.postgresql.org/docs/9.5/static/datatype-json.html
 ## Need to filter it
 
 ```
-zcat 2016-03-02-19.json.gz | grep '\\u0000' | wc -l
+zcat 2016-04-24-15.json.gz | grep '\\u0000' | wc -l
 ```
 
 The double backslash matters.
@@ -46,9 +46,9 @@ The double backslash matters.
 ## Loading
 
 ```
-zcat 2016-03-02-19.json.gz |
-  sed -e 's/\\u0000//' |
-  python json-to-postgres.py owenja demo raw_events event
+zcat 2016-04-24-15.json.gz |
+  sed -e 's/\\u0000//g' |
+  python json-to-postgres.py owenja lfnw raw_events event
 ```
 
 Note: other approaches are valid, here; you could halt the import, or
