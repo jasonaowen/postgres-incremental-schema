@@ -30,6 +30,7 @@ viewed in this order:
 7. [Converting scalar data types](scalars.markdown)
 8. [Normalizing](extract-table.markdown)
 9. [Extracting a link table](link-table.markdown)
+10. [Measuring normalization](size.markdown)
 
 ## License
 
