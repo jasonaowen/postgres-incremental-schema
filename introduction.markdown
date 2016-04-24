@@ -7,6 +7,8 @@ by
 https://jasonaowen.github.io/postgres-incremental-schema
 https://github.com/jasonaowen/postgres-incremental-schema
 
+https://lfnw.org/node/4045
+
 
 ## Query Plan
 
@@ -16,4 +18,3 @@ https://github.com/jasonaowen/postgres-incremental-schema
 - Poking at our data
 - Correcting data types
 - Incremental normalization
-- Dealing with JSON arrays

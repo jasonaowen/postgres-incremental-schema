@@ -29,7 +29,7 @@ viewed in this order:
 6. [Flattening JSON objects](flatten.markdown)
 7. [Converting scalar data types](scalars.markdown)
 8. [Normalizing](extract-table.markdown)
-9. [Extracting a link table](link-table.markdown)
+9. [Extracting a link table](link-table.markdown) (optional)
 10. [Measuring normalization](size.markdown)
 
 ## License
