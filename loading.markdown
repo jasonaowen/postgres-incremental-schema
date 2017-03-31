@@ -48,7 +48,7 @@ The double backslash matters.
 ```
 zcat 2016-04-24-15.json.gz |
   sed -e 's/\\u0000//g' |
-  python json-to-postgres.py owenja lfnw raw_events event
+  python json-to-postgres.py owenja demo raw_events event
 ```
 
 Note: other approaches are valid, here; you could halt the import, or
