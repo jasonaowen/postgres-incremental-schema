@@ -12,6 +12,7 @@ https://github.com/jasonaowen/postgres-incremental-schema
 
 - JSON & Postgres
 - Dataset introduction
+- How do you create a schema?
 - Loading data into Postgres
 - Poking at our data
 - Correcting data types

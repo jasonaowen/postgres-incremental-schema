@@ -24,7 +24,7 @@ CREATE FUNCTION type_count(in table_name text, in column_name text)
     END
   $func$ LANGUAGE plpgsql STABLE;
 
-select * from type_count('events', 'event');
+SELECT * FROM type_count('events', 'event');
 ```
 
 
@@ -54,5 +54,5 @@ CREATE FUNCTION key_count(in table_name text, in column_name text)
     END
   $func$ LANGUAGE plpgsql STABLE;
 
-select * from key_count('events', 'event');
+SELECT * FROM key_count('events', 'event');
 ```

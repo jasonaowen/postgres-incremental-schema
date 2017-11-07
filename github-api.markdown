@@ -15,5 +15,11 @@ https://www.githubarchive.org/
 
 Gzipped, Line-Delimited JSON
 
-April 24th, 8am Pacific time:
-http://data.githubarchive.org/2016-04-24-15.json.gz
+November 1st, 7am Eastern time:
+http://data.githubarchive.org/2017-11-01-11.json.gz
+
+
+## Motivating question
+
+What are the first commits added
+to repos newly made public?

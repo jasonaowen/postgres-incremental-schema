@@ -69,23 +69,18 @@ SELECT set_concrete_type('actors', 'id', 'BIGINT');
 SELECT * FROM type_count('actors', 'login');
 SELECT set_concrete_type('actors', 'login', 'TEXT');
 
-SELECT * FROM type_count('actors', 'url');
-SELECT set_concrete_type('actors', 'url', 'TEXT');
+SELECT * FROM type_count('actors', 'display_login');
+SELECT set_concrete_type('actors', 'display_login', 'TEXT');
 ```
 
-
-## Clean up data
 
 ```sql
+SELECT * FROM type_count('actors', 'url');
+SELECT set_concrete_type('actors', 'url', 'TEXT');
+
 SELECT * FROM type_count('actors', 'gravatar_id');
-SELECT DISTINCT gravatar_id FROM actors;
-
-ALTER TABLE actors DROP COLUMN gravatar_id;
+SELECT set_concrete_type('actors', 'gravatar_id', 'TEXT');
 ```
-
-If it's [always
-empty](https://developer.github.com/changes/2014-09-05-removing-gravatar-id/),
-do we still need it?
 
 
 ## Finish up with actors

@@ -31,7 +31,7 @@ SET actor = event->'actor',
 ```
 
 
-## We might do that a few times, too
+## We'll do that again, too
 
 ```sql
 CREATE FUNCTION explode_json_column(

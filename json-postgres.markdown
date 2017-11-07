@@ -49,12 +49,12 @@ A single data point:
   <tbody>
     <tr>
       <td>JSON</td>
-      <td>47.85 s</td>
+      <td>29.31 s</td>
       <td>127 MB</td>
     </tr>
     <tr>
       <td>JSONB</td>
-      <td>53.71 s</td>
+      <td>31.18 s</td>
       <td>143 MB</td>
     </tr>
   </tbody>
@@ -77,11 +77,11 @@ sets `2016-01-01-1.json.gz`, `2016-01-15-15.json.gz`, and
   <tbody>
     <tr>
       <td>JSON</td>
-      <td>2.044 s</td>
+      <td>1.097 s</td>
     </tr>
     <tr>
       <td>JSONB</td>
-      <td>1.359 s</td>
+      <td>0.687 s</td>
     </tr>
   </tbody>
 </table>
